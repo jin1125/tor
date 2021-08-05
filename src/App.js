@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React , {useReducer} from 'react';
+import { Body } from './components/Body';
+import { Form } from './components/Form';
+import { Header } from './components/Header';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const initialState = {
+  name : 'Jinta\' Site'
 }
 
-export default App;
+function reducer(state, action) {
+  switch (action.type) {
+    case 'CHANGE_NAME':
+      return {
+        ...state,
+        name: action.payload
+      };
+    default : 
+      return state
+  }
+}
+
+export const SiteContext = React.createContext();
+
+const SiteProvider = ({children}) => {
+  const [state, dispatch] = useReducer(reducer, initialState)
+  return <SiteContext.Provider value={{state, dispatch}}>
+    {children}
+  </SiteContext.Provider>
+}
+
+export default function App() {
+  return (
+    <SiteProvider>
+      <Header />
+      <Body />
+      <Form />
+    </SiteProvider>
+  );
+}
