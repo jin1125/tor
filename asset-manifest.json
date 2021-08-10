@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tor/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/tor/static/js/main.63057f2c.chunk.js",
+    "main.js.map": "/tor/static/js/main.63057f2c.chunk.js.map",
+    "runtime-main.js": "/tor/static/js/runtime-main.401822bc.js",
+    "runtime-main.js.map": "/tor/static/js/runtime-main.401822bc.js.map",
+    "static/js/2.89dab021.chunk.js": "/tor/static/js/2.89dab021.chunk.js",
+    "static/js/2.89dab021.chunk.js.map": "/tor/static/js/2.89dab021.chunk.js.map",
+    "static/js/3.552db3da.chunk.js": "/tor/static/js/3.552db3da.chunk.js",
+    "static/js/3.552db3da.chunk.js.map": "/tor/static/js/3.552db3da.chunk.js.map",
+    "index.html": "/tor/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/tor/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.89dab021.chunk.js.LICENSE.txt": "/tor/static/js/2.89dab021.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.401822bc.js",
+    "static/js/2.89dab021.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.63057f2c.chunk.js"
+  ]
+}
